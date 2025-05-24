@@ -10,10 +10,15 @@ import GetTouch from './components/Get-Touch'
 import Footer from './components/Footer'
 
 function App() {
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   const skills = [
-    {  
-      name: "React", icon: "/react.svg", level: 60 },
+    { name: "React", icon: "/react.svg", level: 60},
     { name: "C#", icon: "/csharp.svg", level: 90 },
     { name: ".NET", icon: "/dotnet-logo.svg", level: 85 },
     { name: "JavaScript", icon: "/js-logo.svg", level: 65 },
@@ -30,7 +35,7 @@ function App() {
           transition={{ duration: 0.5, delay: 0.3 }}
           style={{ transformOrigin: 'center' }}
         >
-          <Code_display/>
+          <Code_display />
         </motion.div>
         <motion.h1
           className="text-4xl md:text-6xl font-bold mb-4"
@@ -59,8 +64,14 @@ function App() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <button className="main-button work-button">View My Work</button>
-          <button className="main-button contact-button">Contact Me</button>
+          <button className="main-button work-button" onClick={(e) => {
+            e.preventDefault();
+            scrollToSection('projects');
+          }}>View My Work</button>
+          <button className="main-button contact-button" onClick={(e) => {
+            e.preventDefault();
+            scrollToSection('contact');
+          }}>Contact Me</button>
         </motion.div>
         <motion.div
           className="social-container"
@@ -71,7 +82,7 @@ function App() {
           <a href="https://github.com/luckdiamond0" className="text-gray-400 hover:text-white transition-colors">
             <FaGithub className="main-icons" />
           </a>
-           {/*<a href="https://linkedin.com/in/" className="text-gray-400 hover:text-white transition-colors">
+          {/*<a href="https://linkedin.com/in/" className="text-gray-400 hover:text-white transition-colors">
             <FaLinkedin className="main-icons" /> 
           </a>  */}
           <a href="mailto:luckdiamondplayer@gmail.com?subject=Contact%20Form%20Submission" className="text-gray-400 hover:text-white transition-colors">
@@ -90,7 +101,7 @@ function App() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.9 }}
-          > 
+          >
           </motion.h2>
         </motion.div>
       </div>
