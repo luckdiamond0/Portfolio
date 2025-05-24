@@ -66,3 +66,9 @@
 .navbar-link:hover {
   color: #61dafb;
 }
+
+@media (max-width: 768px) { 
+  .navbar-item {
+   margin-left: 20px;
+  }
+ }

@@ -2,13 +2,6 @@
   max-width: 1280px;
 }
 
-@media (max-width: 1420px) {
-  #root {
-    margin: 0 auto;
-    padding: 2rem;
-  }
-}
-
 .text-primary {
   color: #61dafb;
   text-shadow:
@@ -39,22 +32,6 @@
   24%,
   55% {
     text-shadow: none;
-  }
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(1) .logo {
-    animation: logo-spin infinite 20s linear;
   }
 }
 
@@ -181,7 +158,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.75rem; 
+  gap: 0.75rem;
 }
 
 .otherlg-background-text {
@@ -191,4 +168,44 @@
   font-size: 0.875rem;
   font-weight: 600;
   padding: 0.25rem 0.5rem;
+}
+
+/* Media query moved to the end to ensure it overrides previous styles */
+@media (max-width: 1420px) {
+  #root {
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .main-container {
+    gap: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* Add more specific media queries for smaller screens */
+@media (max-width: 768px) {
+  .main-container {
+    margin-top: 80px;
+  }
+
+  .main-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .main-container p {
+    font-size: 1.1rem;
+  }
+
+  .button-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
