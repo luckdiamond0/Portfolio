@@ -45,7 +45,7 @@ function App() {
         >
           Hi, I'm{" "}
           <span className="text-primary relative">
-            Igor Sarda
+            Igor Sarda Rezende
             <span className="absolute inset-0 bg-cyan-400/20 blur-xl -z-10"></span>
           </span>
         </motion.h1>
