@@ -8,7 +8,7 @@ function Footer() {
       <div className="container mx-auto px-4">
         <div className="footer-flex flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <p className='footer-myname'>Luckdiamond0</p>
+            <p className='footer-myname'>Igor Sarda</p>
             <p className="text-gray-400 text-sm mt-1">© {new Date().getFullYear()} All rights reserved.</p>
           </div>
           <div className="flex gap-4">
@@ -18,7 +18,7 @@ function Footer() {
            {/*  <a href="#" className="text-gray-400 hover:text-white transition-colors">
               <Linkedin className="h-5 w-5 colorblue" />
             </a> */}
-            <a href="mailto:luckdiamondplayer@gmail.com?subject=Contact%20Form%20Submission" className="text-gray-400 hover:text-white transition-colors">
+            <a href="mailto:igorsarda.dev@gmail.com?subject=Contact%20Form%20Submission" className="text-gray-400 hover:text-white transition-colors">
               <Mail className="h-5 w-5 colorblue" />
             </a>
             <a href="https://github.com/luckdiamond0/Portfolio" className="text-gray-400 hover:text-white transition-colors">
