@@ -77,7 +77,7 @@ function Code_display() {
             <code>
               <span className="code-keyword">const</span> developer = {"{"}
               <br />
-              {"  "}name: <span className="code-string">"Luckdiamond0"</span>,
+              {"  "}name: <span className="code-string">"Igor Sarda Rezende"</span>,
               <br />
               {"  "}skills: [<span className="code-string">"React"</span>,{" "}
               <span className="code-string">"C#"</span>, <span className="code-string">".NET"</span>],
