@@ -22,7 +22,7 @@ function GetTouch() {
                 </div>
                 <div>
                   <p className="text-gray-400 text-sm">Email</p>
-                  <p className="text-gray-200">luckdiamondplayer@gmail.com</p>
+                  <p className="text-gray-200">igorsarda.dev@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
