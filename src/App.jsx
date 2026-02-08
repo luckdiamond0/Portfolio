@@ -85,7 +85,7 @@ function App() {
           {/*<a href="https://linkedin.com/in/" className="text-gray-400 hover:text-white transition-colors">
             <FaLinkedin className="main-icons" /> 
           </a>  */}
-          <a href="mailto:luckdiamondplayer@gmail.com?subject=Contact%20Form%20Submission" className="text-gray-400 hover:text-white transition-colors">
+          <a href="mailto:igorsarda.dev@gmail.com?subject=Contact%20Form%20Submission" className="text-gray-400 hover:text-white transition-colors">
             <FaEnvelope className="main-icons" />
           </a>
         </motion.div>
